@@ -34,6 +34,11 @@
     border-top: none;
   }
 
+p {
+font-style: bold;
+font-size: 24px;
+}
+
 #Jul {
 width: 200px;
 Height: 200px;
@@ -42,4 +47,5 @@ Height: 200px;
 #PoolImage {
 width: 350px;
 height: 150px;
+border: 2px solid;
 }
