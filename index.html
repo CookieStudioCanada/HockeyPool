@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <img id="PoolImage" class="image" src="pool.jpg">
+    <img id="PoolImage" class="image" src="pool2.jpg">
 
 <!-- Tab links -->
 <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Feed')">Feed</button>
   <button class="tablinks" onclick="openCity(event, 'London')">Choix</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Classement</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Règlements</button>
@@ -19,6 +20,11 @@
 </div>
 
 <!-- Tab content -->
+<div id="Feed" class="tabcontent">
+  <h3>Feed</h3>
+  <p>À venir.</p>
+</div>
+
 <div id="London" class="tabcontent">
   <h3>Choix</h3>
   <p>Peter</p>
@@ -56,7 +62,63 @@
 
 <div id="Paris" class="tabcontent">
   <h3>Classement</h3>
-  <p>À venir.</p>
+  <br>
+  <table id="customers">
+    <tr>
+      <th>Poolers</th>
+      <th>Équipe</th>
+      <th>Parfait</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Thunder</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Larry</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ced</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PP</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Guy</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Stan</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jerome</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
 </div>
 
 <div id="Tokyo" class="tabcontent">
