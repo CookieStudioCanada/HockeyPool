@@ -1,138 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Pool</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <img id="PoolImage" class="image" src="pool2.jpg">
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 0);
+}
 
-<!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Feed')">Feed</button>
-  <button class="tablinks" onclick="openCity(event, 'London')">Choix</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Classement</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Règles</button>
-  <button class="tablinks" onclick="openCity(event, 'EasterEgg')">Extra</button>
-</div>
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 12px;
+  transition: 0.3s;
+}
 
-<!-- Tab content -->
-<div id="Feed" class="tabcontent">
-  <h3>Feed</h3>
-  <p>À venir.</p>
-</div>
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(255, 255, 0);
+}
 
-<div id="London" class="tabcontent">
-  <h3>Choix</h3>
-  <p>Peter</p>
-  <img class="image" src="peter.jpg">
-  <br>
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(255, 255, 0);
+}
 
-  <p>Ced</p>
-  <img class="image" src="ced.jpg">
-  <br>
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgb(0, 0, 0);
+  border-top: none;
+}
 
-  <p>Jerome</p>
-  <img class="image" src="jerome.jpg">
-  <br>
+#Jul {
+width: 200px;
+Height: 200px;
+border: 5px solid #000000;
+}
 
-  <p>Larry</p>
-  <img class="image" src="larose.jpg">
-  <br>
+#PoolImage {
+width: 350px;
+height: 150px;
+}
 
-  <p>Guy</p>
-  <img class="image" src="guy.jpg">
-  <br>
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  <p>Thunder</p>
-  <img class="image" src="vincent.jpg">
-  <br>
+#customers td, #customers th {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+}
 
-  <p>PP</p>
-  <img class="image" src="pouliot.jpg">
-  <br>
+#customers tr:nth-child(even){background-color: #f2f2f2;}
 
-  <p>Stan</p>
-  <img class="image" src="este.jpg">
-  <br>
-</div>
+#customers tr:hover {background-color: #ddd;}
 
-<div id="Paris" class="tabcontent">
-  <h3>Classement</h3>
-  <table id="customers">
-    <tr>
-      <th>Poolers</th>
-      <th>Équipe</th>
-      <th>Parfait</th>
-      <th>Points</th>
-    </tr>
-    <tr>
-      <td>Peter</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Thunder</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Larry</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Ced</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>PP</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Guy</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Stan</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Jerome</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </table>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Règles</h3>
-  <p>Pointage : 3 points par bonne équipe. 2 points supplémentaire si nombre de match exact (avec bonne équipe).</p>
-  <p>Coût : 20 $ par personne.</p>
-  <p>Prize pool : Winner take all.</p>
-</div>
-  
-<div id="EasterEgg" class="tabcontent">
-  <h3>Extra</h3>
-  <img id="Jul" class="image" src="Jul.jpg">
-</div>
-
-<script src="index.js"></script>
-
-</body>
-</html>
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(255, 255, 0);
+  color: black;
+}
