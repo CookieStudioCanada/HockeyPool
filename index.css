@@ -51,7 +51,7 @@ height: 150px;
   width: 100%;
 }
 
-.customers td, .customers th {
+.customers td, th {
   border: 1px solid rgb(0, 0, 0);
   padding: 8px;
 }
@@ -61,17 +61,6 @@ height: 150px;
 .customers tr:hover {background-color: #ddd;}
 
 .customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: rgb(255, 255, 0);
-  color: black;
-}
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
