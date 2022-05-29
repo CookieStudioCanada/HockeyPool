@@ -67,3 +67,9 @@ height: 150px;
   background-color: rgb(255, 255, 0);
   color: black;
 }
+
+#Feed {
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
